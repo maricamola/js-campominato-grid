@@ -4,7 +4,7 @@ const container = document.querySelector('#container');
 
 //Creo il ciclo per generare i 100 square
 
-for(let i = 1; i < 100; i++ ){
+for(let i = 0; i < 100; i++ ){
   
   const firstSquare =  createSquare();
   
@@ -24,8 +24,10 @@ function createSquare() {
   const newSquare = document.createElement('div');
   //assegno nome alla classe square
   newSquare.className = 'square';
-  
+
   //Aggiungo un evento per vedere il numero della casella selezionata in console.log
+
+  //Restituisce un valore numerico che rappresenta la posizione dell'elemento nella stringa
   newSquare.addEventListener('click', function() {
     const parent = newSquare.parentNode;
     const squareNumber = Array.from(parent.children).indexOf(newSquare) + 1;
