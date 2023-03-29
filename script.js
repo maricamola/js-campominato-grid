@@ -21,7 +21,7 @@ for(let i = 1; i < 100; i++ ){
 //Creo funzione per il bottone che dovrà mostrare il container
 
 function showContainer(){
-  const container = document.getElementById('mmcontainer');
+  let container = document.getElementById('mmcontainer');
 
   if(container === 'none'){
     container = 'block';
