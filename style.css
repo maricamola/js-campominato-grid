@@ -30,7 +30,12 @@ h1{
 }
 
 .square{
-  border: 1px solid white;
+  border: 1px solid black;
   width: calc(100% / 10);
   aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+
+.square.click{
+  background-color: #F9F9F9;
 }
