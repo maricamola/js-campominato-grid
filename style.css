@@ -21,11 +21,15 @@ h1{
   align-items: center;
 }
 
-#mmcontainer{
+.main-wrapper{
   display: none;
 }
 
-.container{
+#container{
+  display: none;
+}
+
+#container{
   display: flex;
   flex-wrap: wrap;
   width: 600px;
