@@ -16,6 +16,20 @@ for(let i = 1; i < 100; i++ ){
   container.appendChild(firstSquare)
 }
 
+/**********funzioni*************/
+
+//Creo funzione per il bottone che dovrà mostrare il container
+
+function showContainer(){
+  const container = document.getElementById('mmcontainer');
+
+  if(container === 'none'){
+    container = 'block';
+  } else {
+    container = 'none'
+  }
+}
+
 //Creo funzione per generare lo square
 
 function createSquare() {
@@ -26,4 +40,8 @@ function createSquare() {
 
   return newSquare ;
 }
+
+//Creo una funziona che mi permette di vedere in console il numero della casella selezionata
+
+
 
