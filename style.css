@@ -21,13 +21,6 @@ h1{
   align-items: center;
 }
 
-.main-wrapper{
-  display: none;
-}
-
-#container{
-  display: none;
-}
 
 #container{
   display: flex;
@@ -46,4 +39,17 @@ h1{
 
 .square.click{
   background-color: #F9F9F9;
+}
+
+button{
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-top: 50px;
+  background-color: #9f708a;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #9f708aa9;
 }

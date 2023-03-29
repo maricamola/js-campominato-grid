@@ -22,27 +22,40 @@ for(let i = 1; i < 100; i++ ){
 
 function createSquare() {
   const newSquare = document.createElement('div');
-
   //assegno nome alla classe square
   newSquare.className = 'square';
+  
+  //Aggiungo un evento per vedere il numero della casella selezionata in console.log
+  newSquare.addEventListener('click', function() {
+    const parent = newSquare.parentNode;
+    const squareNumber = Array.from(parent.children).indexOf(newSquare) + 1;
+    console.log(`Hai selezionato la casella numero ${squareNumber}`);
+  });
 
-  return newSquare ;
+  return newSquare;
 }
+
 
 //Creo funzione per il bottone che dovrà mostrare il container
 
 function showContainer() {
-  const containerHide = document.getElementsByClassName('main-wrapper');
+  const containerHide = document.querySelector('main-wrapper');
 
   if(containerHide === 'none'){
     containerHide = 'block';
   } else {
     containerHide === 'none'; 
   }
-  console.log('main-wrapper')
+  console.log(containerHide)
 }
 
-//Creo una funziona che mi permette di vedere in console il numero della casella selezionata
+//seconda opzione 
+
+/*function showContainer() {
+  let containerHide = document.getElementsByClassName("main-wrapper");
+  containerHide.classList.toggle("none");
+}*/
+
 
 
 
