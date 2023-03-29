@@ -17,4 +17,8 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 ## Steps
 
 - Creo il markup
+- In js seleziono il container
+- Faccio un ciclo per generare 100 square
+- 
+- 
 
